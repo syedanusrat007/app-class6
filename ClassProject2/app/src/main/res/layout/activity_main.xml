@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dip10"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hitName"
+        android:background="@drawable/ev_bg"
+        android:padding="15dp"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:layout_marginBottom="@dimen/dip10"
+        android:textSize="@dimen/textSize15"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hitName"
+        android:layout_below="@id/etName"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/ev_bg"
+        android:padding="15dp"
+        android:layout_marginBottom="@dimen/dip10"
+        android:textSize="@dimen/textSize15"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hitName"
+        android:layout_below="@id/etEmail"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:background="@drawable/ev_bg"
+        android:padding="15dp"
+        android:layout_marginBottom="@dimen/dip20"
+        android:textSize="@dimen/textSize15"/>
+    <LinearLayout
+        android:id="@+id/rgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Gender: "/>
+
+        <RadioGroup
+            android:id="@+id/grGender"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:checked="false"
+                android:textSize="16dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:checked="false"
+                android:textSize="16dp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/selectView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgView"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Select type: "/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sp_bg"
+            />
+
+    </LinearLayout>
+
+
+  <TextView
+        android:id="@+id/tvRegBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION"
+        android:padding="@dimen/dip10"
+        android:background="@drawable/tv_bg"
+        android:gravity="center"
+        android:textStyle="bold"
+      android:layout_marginBottom="20dp"
+        android:layout_below="@id/selectView"
+        android:textSize="@dimen/textSize20"/>
+
+
+    <TextView
+        android:id="@+id/tvApiBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REMOTE CALL"
+        android:padding="@dimen/dip10"
+        android:background="@drawable/tv_bg"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@id/tvRegBtn"
+        android:textSize="@dimen/textSize20"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ClassProject2</string>
+
+    <string name="hitName">Enter your name</string>
+
+    <string name="alerNam">Please enter your name</string>
+    <string name="alerEmail">Please enter your email</string>
+    <string name="alerPasword">Please enter your password</string>
+</resources>
